@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PS4 12.02 Jailbreak Launcher</title>
+  <style>
+    body { font-family: sans-serif; background-color: #101010; color: #00FF88; text-align: center; padding-top: 10%; }
+    .log { background-color: #000; border: 1px solid #0f0; padding: 10px; margin: 20px auto; max-width: 600px; height: 200px; overflow-y: auto; white-space: pre-line; }
+  </style>
+</head>
+<body>
+  <h1>PS4 Jailbreak 12.02</h1>
+  <p>Launching exploit... Please wait</p>
+  <div class="log" id="log">Initializing...</div>
+
+  <script>
+    const log = msg => {
+      const logEl = document.getElementById('log');
+      logEl.textContent += `\n${msg}`;
+      logEl.scrollTop = logEl.scrollHeight;
+    };
+
+    log("[+] Starting Lua loader (placeholder)...");
+
+    function fakeLuaLoader() {
+      log("[!] This is a fake loader. Waiting for real exploit release.");
+    }
+
+    setTimeout(() => {
+      log("[*] Simulating exploit attempt...");
+      fakeLuaLoader();
+      log("[-] Exploit failed (as expected)");
+    }, 3000);
+  </script>
+</body>
+</html>
